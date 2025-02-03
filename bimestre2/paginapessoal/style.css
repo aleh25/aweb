@@ -1,0 +1,82 @@
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0 auto;
+    padding: 0;
+    width: 60%; /* Centraliza a página e evita ocupar toda a tela */
+    background-color: #f5f5f5; /* Cor de fundo neutra */
+    color: #333; /* Cor do texto */
+}
+
+header {
+    background-color: #0044cc; /* Cor principal */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+nav {
+    background-color: #003399; /* Cor secundária */
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#sobre {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#curiosidades {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#curiosidades ol {
+    padding: 0;
+}
+
+#curiosidades li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#curiosidades li img {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #002266; /* Cor escura para contraste */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
