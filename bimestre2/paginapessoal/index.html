@@ -7,179 +7,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <style>
-        /* Cores */
-        :root {
-            --cor-principal: #0044cc; /* 60% */
-            --cor-secundaria: #003399; /* 30% */
-            --cor-contraste: #000000; /* 10% */
-            --cor-texto: #333;
-            --cor-footer: #002266;
-        }
-
-        body {
-            font-family: 'Merriweather', serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--cor-contraste);
-            color: var(--cor-texto);
-            width: 100%;
-        }
-
-        /* Contêiner principal para centralizar e adicionar espaçamento */
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Cabeçalho com nome e navegação centralizados */
-        header {
-            background-color: var(--cor-principal);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        /* Navegação */
-        nav {
-            background-color: var(--cor-secundaria);
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            top: 80px;
-            width: 100%;
-            z-index: 999;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-        }
-
-        /* Alterações para a seção hero */
-        .hero {
-            text-align: center;
-            background-image: url('image/hero.jpg'); /* Imagem do herói */
-            background-size: cover;
-            background-position: center;
-            color: white; /* Título em branco para contraste */
-            padding: 150px 0;
-            background-color: #333; /* Fundo alternativo para uma cor mais suave */
-        }
-
-        .hero h2 {
-            font-size: 36px;
-            color: white; /* Cor do texto ajustada para branco */
-        }
-
-        .sobre {
-            padding: 60px 20px;
-            text-align: center;
-            background-color: white;
-        }
-
-        .curiosidades {
-            padding: 60px 20px;
-            background-color: #ddd;
-            text-align: center;
-        }
-
-        .curiosidades h2 {
-            margin-bottom: 20px;
-        }
-
-        .card-container {
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-        }
-
-        .card {
-            width: 100%;
-            max-width: 250px;
-            background-color: white;
-            margin: 20px;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-
-        footer {
-            background-color: var(--cor-footer);
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Alesandro Adriano da Silva</h1>
-        </div>
+        <h1>Alesandro Adriano da Silva</h1>
     </header>
 
     <nav>
-        <div class="container">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#curiosidades">Curiosidades</a></li>
-                <li><a href="#educacao">Educação</a></li>
-                <li><a href="#causos">Causos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </div>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#educacao">Educação</a></li>
+            <li><a href="#causos">Causos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
     </nav>
 
     <div class="container">
+        <!-- Seção Hero -->
         <section class="hero">
             <h2>Bem-vindo à minha página pessoal!</h2>
         </section>
 
+        <!-- Sobre Mim -->
         <section id="sobre" class="sobre">
             <h2>Sobre Mim</h2>
-            <img src="image/perfil.png.png" alt="Foto de Alesandro" width="200" height="200">
-            <p>Meu nome é Alesandro, tenho 18 anos e sou natural de Ceará-Mirim/RN. Desde cedo, me apaixonei pela musculação, e hoje ela se tornou uma das minhas maiores paixões. Estou focado em me tornar um atleta profissional de fisiculturismo, buscando sempre aprimorar meus conhecimentos e habilidades na área. Com disciplina e dedicação, tenho trabalhado incansavelmente para atingir meus objetivos e conquistar meu lugar no esporte</p>
+            <img src="image/perfil.png" alt="Foto de Alesandro" width="200" height="200">
+            <p>Meu nome é Alesandro, tenho 18 anos e sou natural de Ceará-Mirim/RN. Desde cedo, me apaixonei pela musculação, e hoje ela se tornou uma das minhas maiores paixões. Estou focado em me tornar um atleta profissional de fisiculturismo, buscando sempre aprimorar meus conhecimentos e habilidades na área. Com disciplina e dedicação, tenho trabalhado incansavelmente para atingir meus objetivos e conquistar meu lugar no esporte.</p>
         </section>
 
+        <!-- Curiosidades -->
         <section id="curiosidades" class="curiosidades">
             <h2>Curiosidades</h2>
             <div class="card-container">
@@ -208,27 +67,34 @@
 
         <section id="educacao" class="sobre">
             <h2>Educação</h2>
-            <table border="1">
-                <tr>
-                    <th>Ano</th>
-                    <th>Escola</th>
-                </tr>
-                <tr>
-                    <td>2018-2021</td>
-                    <td>Escola Estadual EITI Barão de Ceará-Mirim</td>
-                </tr>
-                <tr>
-                    <td>2022-2024</td>
-                    <td>Instituto Federal do Rio Grande do Norte</td>
-                </tr>
+            <table class="tabela-educacao">
+                <thead>
+                    <tr>
+                        <th>Ano</th>
+                        <th>Escola</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2018-2021</td>
+                        <td>Escola Estadual EITI Barão de Ceará-Mirim</td>
+                    </tr>
+                    <tr>
+                        <td>2022-2024</td>
+                        <td>Instituto Federal do Rio Grande do Norte</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
+        
 
+        <!-- Causos -->
         <section id="causos" class="sobre">
             <h2>Causos</h2>
             <p>Uma experiência que não esqueço é quando eu era bem pequeno, pois amava lutas, e então um dia que fui ao shopping avistei uma loja de lutas com todos os materiais de lutas. Corri e fui em direção a ela, mas dei de cara com a porta de vidro e bati a cabeça bem forte, foi terrível.</p>
         </section>
 
+        <!-- Habilidades -->
         <section id="habilidades" class="sobre">
             <h2>Habilidades</h2>
             <ul>
@@ -238,6 +104,7 @@
             </ul>
         </section>
 
+        <!-- Footer -->
         <footer id="contato">
             <h3>Contato</h3>
             <p>Email: alessandrosporte12@gmail.com</p>
