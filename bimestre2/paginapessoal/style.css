@@ -1,3 +1,26 @@
+
+:root {
+    --cor-principal: ;
+    --cor-secundaria: ;
+    --cor-fundo: #F29966;
+
+    
+}
+
+.hero {
+    background-color: var(--cor-fundo);
+    text-align: center;
+    padding: 20px;
+
+}
+.hero h2 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 2.5em; /* Ajuste o tamanho da fonte como preferir */
+    color: #333; /* Cor do texto */
+    background-color: white;
+}
+
+
 body {
     font-family: 'Merriweather', serif;
     margin: 0 auto;
@@ -8,15 +31,15 @@ body {
 }
 
 header {
-    background-color: #0044cc; /* Cor principal */
-    color: white;
+    background-color: #202A36; /* Cor principal */
+    color: whitesmoke;
     text-align: center;
     padding: 20px;
-    border-radius: 10px 10px 0 0;
+
 }
 
 nav {
-    background-color: #003399; /* Cor secundária */
+    background-color: #0D0D0D; /* Cor secundária */
     padding: 10px;
     text-align: center;
 }
@@ -38,55 +61,76 @@ nav ul li a {
 }
 
 #sobre {
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-}
-
-#curiosidades {
-    background-color: #ddd;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-}
-
-#curiosidades ol {
-    padding: 0;
-}
-
-#curiosidades li {
-    background-color: white;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-#curiosidades li img {
-    width: 50px; /* Tamanho da imagem */
-    height: 50px;
-    border-radius: 5px;
-}
-
-footer {
-    background-color: #002266; /* Cor escura para contraste */
-    color: white;
+    background-color: var(--cor-fundo);
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
-    border-radius: 0 0 10px 10px;
+    
 }
+
+#sobre img { 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Borda arredondada, pois a imagem é circular */
+    border: 5px solid #202A36; /* Cor e espessura da borda */
+}
+
+
+/* Container dos cards */
+.cards {
+    text-align: center;
+    background-color: var(--cor-fundo);
+}
+
+/* Estilo dos Cards */
+.card {
+    display: inline-block; /* Faz os cards ficarem lado a lado */
+    width: 200px; /* Define um tamanho fixo */
+    background-color: #5A7088;
+    border: 2px solid #fefff9; /* Adiciona a borda */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px; /* Dá espaço entre os cards */
+    vertical-align: top; /* Alinha os cards corretamente */
+}
+
+/* Imagens dentro dos Cards */
+.card img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px #202A36;
+}
+
+/* Títulos dos Cards */
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Texto dentro dos Cards */
+.card p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+table {
+    width: 70%; /* Define largura da tabela */
+    margin-left: auto; /* Centraliza a tabela */
+    margin-right: auto; /* Centraliza a tabela */
+    border-collapse: collapse; /* Une as bordas */
+    border: 2px solid #5A7088; /* Cor da borda */
+    background-color: var(--cor-fundo); /* Cor de fundo */
+}
+
 
 /* Tabela de Educação */
 .tabela-educacao {
     width: 80%;
     margin: 0 auto; /* Centraliza a tabela */
     border-collapse: collapse; /* Remove espaços entre as células */
-    background-color: white;
+    background-color:white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
@@ -110,4 +154,26 @@ footer {
 
 .tabela-educacao tr:hover {
     background-color: #f1f1f1; /* Efeito hover para destacar linhas */
+}
+
+footer {
+    background-color: #202A36; /* Cor escura para contraste */
+    color: white;
+    text-align: center; /* Centraliza todo o conteúdo dentro do footer */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+footer p {
+    margin: 10px 0; /* Espaçamento entre os parágrafos */
+}
+
+footer a {
+    color: #ffffff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado quando passar o mouse */
 }
