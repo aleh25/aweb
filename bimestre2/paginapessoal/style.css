@@ -1,14 +1,14 @@
 
 :root {
-    --cor-principal: ;
-    --cor-secundaria: ;
-    --cor-fundo: #F29966;
-
+    --cor-principal:#202A36 ;
+    --cor-secundaria:#0D0D0D;
+    --cor-destaque: #F29966;
+    --cor-fundo: white;
     
 }
 
 .hero {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-destaque);
     text-align: center;
     padding: 20px;
 
@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 #sobre {
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-destaque);
     text-align: center;
     padding: 20px;
     
@@ -78,7 +78,7 @@ nav ul li a {
 /* Container dos cards */
 .cards {
     text-align: center;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-destaque);
 }
 
 /* Estilo dos Cards */
@@ -121,18 +121,18 @@ table {
     margin-right: auto; /* Centraliza a tabela */
     border-collapse: collapse; /* Une as bordas */
     border: 2px solid #5A7088; /* Cor da borda */
-    background-color: var(--cor-fundo); /* Cor de fundo */
+    background-color: var(--cor-destaque); /* Cor de fundo */
 }
 
 .table h2 {
-    background-color: var(--cor-fundo); /* Cor de fundo */
+    background-color: var(--cor-destaque); /* Cor de fundo */
 }
 /* Tabela de Educação */
 .tabela-educacao {
     width: 80%;
     margin: 0 auto; /* Centraliza a tabela */
     border-collapse: collapse; /* Remove espaços entre as células */
-    background-color:white;
+    background-color: var(--cor-destaque);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
