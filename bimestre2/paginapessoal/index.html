@@ -7,136 +7,73 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Alesandro Adriano da Silva</h1>
+        <div class="logo">
+            <img src="imagens/logo.jpg" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sobre"><i class="fas fa-user"></i> Sobre Mim</a></li>
+                <li><a href="#curiosidades"><i class="fas fa-lightbulb"></i> Curiosidades</a></li>
+                <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#curiosidades">Curiosidades</a></li>
-            <li><a href="#educacao">Educação</a></li>
-            <li><a href="#causos">Causos</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
-    <!-- Seção Hero -->
-        <section class="hero">
-         <div class="hero">
+    <section class="hero">
+        <div class="hero-content">
             <h2>Bem-vindo à minha página pessoal!</h2>
+            <p>Conheça mais sobre mim e minhas paixões.</p>
         </div>
-         </section>
+        <div class="hero-image">
+            <img src="imagens/hero.jpg" alt="Hero Image">
+        </div>
+    </section>
 
-        <!-- Sobre Mim -->
-        <section id="sobre" class="sobre">
-            <h2>Sobre Mim</h2>
-            <div class="sobre">
-            <img src="imagens/perfil.jpg" alt="Foto de Alesandro" width="200" height="200">
+    <section id="sobre" class="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-content">
+            <img src="imagens/perfil.jpg" alt="Foto de Alesandro">
             <p>Meu nome é Alesandro, tenho 18 anos e sou natural de Ceará-Mirim/RN. Desde cedo, me apaixonei pela musculação, e hoje ela se tornou uma das minhas maiores paixões. Estou focado em me tornar um atleta profissional de fisiculturismo, buscando sempre aprimorar meus conhecimentos e habilidades na área. Com disciplina e dedicação, tenho trabalhado incansavelmente para atingir meus objetivos e conquistar meu lugar no esporte.</p>
+        </div>
+    </section>
+
+    <section id="curiosidades" class="curiosidades">
+        <h2>Curiosidades</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="imagens/musculação.jpg" alt="Musculação">
+                <h3>Musculação</h3>
+                <p>Amo musculação e pretendo seguir na área</p>
             </div>
-        </section>
-
-        <!-- Curiosidades -->
-        <main>
-            <article>
-                <section id="Curiosidades"> 
-                    <header>
-                        <h3>Curiosidades</h3>
-                    </header>
-                
-                    <main class="container">
-                        <div class="cards">
-                            <div class="card">
-                                <img src="imagens/musculação.jpg" alt="Curiosidade 1">
-                                <h3>Musculação</h3>
-                                <p>Amo musculação e pretendo seguir na área</p>
-                            </div>
-                
-                            <div class="card">
-                                <img src="imagens/poses.jpg" alt="Curiosidade 2"style="width: 200px;">
-                                <h3>Poses</h3>
-                                <p>Um dos meus hobbies favoritos é praticar poses</p>
-                            </div>
-                
-                            <div class="card">
-                                <img src="imagens/coreografia.jpg" alt="Curiosidade 3"style="width: 200px;">
-                                <h3>Coreografias</h3>
-                                <p>Minhas coreografias são inspiradas em pessoas que admiro</p>
-                            </div>
-                
-                            <div class="card">
-                                <img src="imagens/futebol.jpg" alt="Curiosidade 4"style="width: 200px;">
-                                <h3>Futebol</h3>
-                                <p>Curto muito futebol</p>
-                            </div>
-                
-                            <div class="card">
-                                <img src="imagens/receita.jpg" alt="Corrida" style="width: 200px;">
-                                <h3>Cozinhar</h3>
-                                <p>Gosto de cozinhar e testar novas receitas</p>
-                            </div>
-                        </div>
-                    </main>
-                </section>
-
-        <!-- Seção Educação -->
-        <section id="educacao">
-            <div class="table">
-                <h2>Educação</h2>
-                <table class="tabela-educacao">
-                    <thead>
-                        <tr>
-                            <th>Ano</th>
-                            <th>Escola</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2012-2016</td>
-                            <td>Escola Estadual Imaculada Conceição</td>
-                        </tr>
-                        <tr>
-                            <td>2018-2021</td>
-                            <td>Escola Estadual EITI Barão de Ceará-Mirim</td>
-                        </tr>
-                        <tr>
-                            <td>2022-2024</td>
-                            <td>Instituto Federal do Rio Grande do Norte</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="card">
+                <img src="imagens/poses.jpg" alt="Poses">
+                <h3>Poses</h3>
+                <p>Um dos meus hobbies favoritos é praticar poses</p>
             </div>
-            
-        </section>
+            <div class="card">
+                <img src="imagens/coreografia.jpg" alt="Coreografias">
+                <h3>Coreografias</h3>
+                <p>Minhas coreografias são inspiradas em pessoas que admiro</p>
+            </div>
+            <div class="card">
+                <img src="imagens/futebol.jpg" alt="Futebol">
+                <h3>Futebol</h3>
+                <p>Curto muito futebol</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Causos -->
-        <section id="causos" class="sobre">
-            <h2>Causos</h2>
-            <p>Uma experiência que não esqueço é quando eu era bem pequeno, pois amava lutas, e então um dia que fui ao shopping avistei uma loja de lutas com todos os materiais de lutas. Corri e fui em direção a ela, mas dei de cara com a porta de vidro e bati a cabeça bem forte, foi terrível.</p>
-        </section>
-
-        <!-- Habilidades -->
-        <section id="habilidades" class="sobre">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Muita força</li>
-                <li>Consigo Posar muito bem</li>
-                <li>Sou muito habilidoso no futebol</li>
-            </ul>
-        </section>
-
-        <!-- Footer -->
-        <footer id="contato">
-            <h3>Contato</h3>
-            <p>Email: alessandrosporte12@gmail.com</p>
-            <p>GitHub: <a href="https://github.com/aleh25">aleh25</a></p>
-            <p>Redes Sociais: <a href="https://www.instagram.com/aleh.sz_?igsh=MTFnYmRkZjE1cHg2MA==">Instagram</a></p>
-        </footer>
-    </div>
+    <footer id="contato">
+        <h3>Contato</h3>
+        <p><i class="fas fa-envelope"></i> Email: alessandrosporte12@gmail.com</p>
+        <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/aleh25">aleh25</a></p>
+        <p><i class="fab fa-instagram"></i> Redes Sociais: <a href="https://www.instagram.com/aleh.sz_?igsh=MTFnYmRkZjE1cHg2MA==">Instagram</a></p>
+        <p><i class="fas fa-phone"></i> Telefone: (84) 99161-4482</p>
+    </footer>
 </body>
 </html>
