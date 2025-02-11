@@ -17,6 +17,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     grid-column: 1 / -1;
     background-color: var(--cor-principal);
@@ -44,6 +45,7 @@ nav ul li a {
     font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
     grid-column: 1 / -1;
     display: grid;
@@ -67,6 +69,7 @@ nav ul li a {
     height: auto;
 }
 
+/* Sobre Mim */
 #sobre {
     grid-column: 3 / 11;
     margin-top: 100px;
@@ -87,6 +90,7 @@ nav ul li a {
     border: 5px solid #202A36;
 }
 
+/* Curiosidades */
 #curiosidades {
     grid-column: 3 / 11;
     margin-top: 100px;
@@ -117,6 +121,7 @@ nav ul li a {
     border-radius: 5px;
 }
 
+/* Footer */
 footer {
     grid-column: 1 / -1;
     background-color: var(--cor-principal);
