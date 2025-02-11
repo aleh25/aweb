@@ -65,8 +65,11 @@ nav ul li a {
 }
 
 .hero-image img {
-    max-width: 100%;
-    height: auto;
+    width: 300px; /* Largura da imagem no desktop */
+    height: 300px; /* Altura da imagem no desktop */
+    border-radius: 50%; /* Borda arredondada */
+    border: 5px solid #202A36; /* Borda ao redor da imagem */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
 }
 
 /* Sobre Mim */
@@ -81,13 +84,6 @@ nav ul li a {
 
 .sobre-content {
     text-align: center;
-}
-
-.sobre-content img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 5px solid #202A36;
 }
 
 /* Curiosidades */
@@ -155,15 +151,34 @@ footer a:hover {
         height: 100px; /* Altura de 100px */
         border-radius: 15px; /* Bordas arredondadas */
         z-index: 1000; /* Garante que o header fique acima de outros elementos */
-        padding: 10px; /* Espaçamento interno */
+        padding: 10px 20px; /* Espaçamento interno */
+        display: flex;
+        justify-content: space-between; /* Distribui o logo e os ícones */
+        align-items: center;
+        background-color: var(--cor-principal); /* Cor de fundo */
+    }
+
+    header .logo img {
+        height: 60px; /* Tamanho do logo */
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 20px; /* Espaçamento entre os ícones */
+        margin: 0; /* Remove margens padrão */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px; /* Tamanho dos ícones */
+        padding: 10px; /* Adiciona espaçamento interno nos ícones */
     }
 
     nav ul li a span {
         display: none; /* Esconde os textos dos links, deixando apenas os ícones */
-    }
-
-    nav ul li a {
-        font-size: 24px; /* Tamanho dos ícones */
     }
 
     /* Hero Mobile */
@@ -186,8 +201,11 @@ footer a:hover {
     }
 
     .hero-image img {
-        max-width: 80%;
-        margin: 0 auto;
+        width: 200px; /* Largura da imagem no mobile */
+        height: 200px; /* Altura da imagem no mobile */
+        border-radius: 50%; /* Borda arredondada */
+        border: 5px solid #202A36; /* Borda ao redor da imagem */
+        object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
     }
 
     /* Sobre Mim Mobile */
