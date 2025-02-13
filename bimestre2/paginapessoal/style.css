@@ -27,14 +27,22 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+header .logo {
+    display: flex; /* Usa flexbox para centralizar a foto */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 60px; /* Altura da área do logo */
+    width: 60px; /* Largura da área do logo */
+}
 
 header .logo img {
-    height: 60px; /* Altura da foto */
-    width: 60px; /* Largura da foto */
+    height: 100%; /* A foto ocupa 100% da altura da área do logo */
+    width: 100%; /* A foto ocupa 100% da largura da área do logo */
     border-radius: 50%; /* Borda arredondada para deixar a foto redonda */
     object-fit: cover; /* Garante que a foto cubra o espaço sem distorcer */
-    border: 2px solid white; /* Adiciona uma borda branca ao redor da foto (opcional) */
+    border: 2px solid white; /* Borda ao redor da foto (opcional) */
 }
+
 nav ul {
     list-style: none;
     padding: 0;
